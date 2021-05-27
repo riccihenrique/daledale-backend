@@ -1,0 +1,29 @@
+{
+  "name": "daledale-backend",
+  "version": "1.0.2",
+  "description": "Comecou FDS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:riccihenrique/daledale-backend.git"
+  },
+  "keywords": [
+    "daledale-backend",
+    "daledalebackend"
+  ],
+  "author": "ricciHenrique",
+  "license": "MIT",
+  "bin": {
+    "comecoufds": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/riccihenrique/daledale-backend/issues"
+  },
+  "homepage": "https://github.com/riccihenrique/daledale-backend/blob/master/README.md",
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}

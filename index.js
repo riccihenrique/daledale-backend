@@ -10,7 +10,8 @@ const soundPath = path.join(mainPath, './daledale-backend');
 
 const daledalebackend = function (){
     const linuxcmd = R.join('', ['paplay ', soundPath, '.ogg']);
-    const windowscmd = R.join('', [path.join(mainPath, './forWindows.vbs'), ' ', soundPath, '.mp3']);
+    //const windowscmd = R.join('', [path.join(mainPath, './forWindows.vbs'), ' ', soundPath, '.mp3']);
+    const windowscmd = `powershell -c (New-Object Media.SoundPlayer '${soundPath}.wav').PlaySync()`
     const maccmd = R.join('', ['afplay ', soundPath, '.mp3']);
 
     const platform = process.platform;
